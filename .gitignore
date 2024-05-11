@@ -1,1 +1,4 @@
 local_server.bat
+.vscode/
+node_modules/
+dist/

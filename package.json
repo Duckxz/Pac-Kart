@@ -1,0 +1,30 @@
+{
+  "name": "pac-kart",
+  "version": "0.0.1",
+  "description": "Pac-Kart is an in progress file editor.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup --config ./rollup.config.mjs",
+    "rollup-watch": "rollup --watch --config ./rollup.config.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Duckxz/Pac-Kart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Duckxz/Pac-Kart/issues"
+  },
+  "homepage": "https://github.com/Duckxz/Pac-Kart#readme",
+  "dependencies": {
+    "lit": "^3.1.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.17.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.4.5"
+  }
+}
