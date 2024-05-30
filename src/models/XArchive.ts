@@ -7,13 +7,13 @@ import { Model } from "./Model";
 import { XArchiveEntry } from "./XArchiveEntry";
 
 export class XArchive extends Model implements IReleasable {
-  public extension: string;
-  public game: XArchiveGame;
-  public console: XArchiveConsole;
-  public magic1: number;
-  public magic2: number;
-  public version: XArchiveVersion;
-  public fileCount: number;
+  public extension: string = "";
+  public game: XArchiveGame = XArchiveGame.HotWheelsVelocityX;
+  public console: XArchiveConsole = XArchiveConsole.PC;
+  public magic1: number = 0;
+  public magic2: number = 0;
+  public version: XArchiveVersion = XArchiveVersion.HotWheelsPC;
+  public fileCount: number = 0;
   public entries: XArchiveEntry[] = new Array<XArchiveEntry>;
 
   public DetermineArchiveTarget(): void {

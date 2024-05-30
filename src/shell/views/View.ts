@@ -2,7 +2,7 @@ import { LitElement } from "lit";
 
 export abstract class View extends LitElement
 {
-  public createRenderRoot(): HTMLElement | DocumentFragment {
+  public override createRenderRoot(): HTMLElement | DocumentFragment {
     return this;
   }
 }

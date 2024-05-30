@@ -22,7 +22,7 @@ export class ScriptListingModelView extends ModelView<XArchiveFile>
       html`
         <div>
           <h2>
-            Model ${this.Model.offsetPatchListOffset} ${this.Model.indexPatchListOffset} ${this.Model.soundCount}
+            Model ${this.Model.orderedListLength} ${this.Model.audioSectonLength} ${this.Model.soundCount}
           </h2>
         </div>
       ` 

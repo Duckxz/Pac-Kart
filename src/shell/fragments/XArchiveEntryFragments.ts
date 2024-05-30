@@ -9,7 +9,9 @@ export class XArchiveEntryFragments
   {
     return html`
       <div class="row">
-        <button type="button" class="btn btn-outline-dark m-1" @click="${async (e: Event) => document.querySelector<ImporterView>("#importer")?.SetScriptListingModel(model.file)}">
+        <button type="button" class="btn btn-outline-dark m-1" @click="${
+          async (e: Event) => document.querySelector<ImporterView>("#importer")?.SetScriptListingModel(model.file)
+        }">
           ${XArchiveFileType[model.fileType]} ${index}
         </button>
       </div>
