@@ -4,15 +4,15 @@ import { Model } from "./Model";
 
 export class XArchiveAudio extends Model implements IReleasable
 {
-  public dataOffset: number = 0;
-  public length: number = 0;
-  public unk1: number = 0;
-  public sampleRate: number = 0;
-  public unk2: number = 0;
-  public maybeVolume: number = 0;
-  public unk3: number = 0;
-  public unk4: number = 0;
-  public unk5: number = 0;
+  public dataOffset: number = -1;
+  public length: number = -1;
+  public unk1: number = -1;
+  public sampleRate: number = -1;
+  public unk2: number = -1;
+  public maybeVolume: number = -1;
+  public unk3: number = -1;
+  public unk4: number = -1;
+  public unk5: number = -1;
 
   public static ReadFrom(offset: number, reader: BinaryReader): XArchiveAudio {
     let audio = new XArchiveAudio();
